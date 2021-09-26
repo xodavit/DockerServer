@@ -13,7 +13,7 @@ public class Main {
                         final var socket = serverSocket.accept(); // пришёл клиент
                         final var out = socket.getOutputStream()
                 ) {
-                    final var message = "Hello world";
+                    final var message = "Hello world from vanille server";
 
                     out.write((
                             "HTTP/1.1 200 OK\r\n" +
