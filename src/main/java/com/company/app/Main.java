@@ -1,3 +1,5 @@
+package com.company.app;
+
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.ServerSocket;
@@ -13,7 +15,7 @@ public class Main {
                         final var socket = serverSocket.accept(); // пришёл клиент
                         final var out = socket.getOutputStream()
                 ) {
-                    final var message = "Hello world";
+                    final var message = "Hello world from Maven project";
 
                     out.write((
                             "HTTP/1.1 200 OK\r\n" +
