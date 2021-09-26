@@ -15,7 +15,7 @@ public class Main {
                         final var socket = serverSocket.accept(); // пришёл клиент
                         final var out = socket.getOutputStream()
                 ) {
-                    final var message = "Hello world from Maven project";
+                    final var message = "Hello world from master project";
 
                     out.write((
                             "HTTP/1.1 200 OK\r\n" +
